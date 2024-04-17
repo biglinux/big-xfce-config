@@ -1,0 +1,52 @@
+#!/bin/sh
+
+# Defining the default visual style to be used in applications that use Qt
+export QT_STYLE_OVERRIDE=kvantum
+export QT_QPA_PLATFORMTHEME=xfce
+# export GTK_THEME=adw-gtk3-dark # Descomantar apenas quando for lançar novo BETA
+
+# Force language
+if [ "$LANGUAGE" = "" ]; then
+	export LANGUAGE=$LANG
+fi
+
+# Checks if the shell has already been changed
+if [ ! -f "$HOME/.biglinux-shell-changed" ]; then
+	biglinux-change-default-shell bash-power
+	touch "$HOME/.biglinux-shell-changed"
+fi
+
+#Faster AMD GPU
+export RADV_PERFTEST=sam,nggc,ext_ms
+
+#OBS Studio game capture with vulkan
+if [ -e "/usr/bin/obs-vkcapture" ]; then
+	export OBS_USE_EGL=1
+	export OBS_VKCAPTURE=1
+	export VK_INSTANCE_LAYERS=VK_LAYER_OBS_vkcapture_64:VK_LAYER_VALVE_steam_overlay_64 #Fix MangoHUD overlay
+fi
+
+#Keyboard LED
+if [ -e "$HOME/.config/ledkeyboard" ]; then
+	change-keyboard-led on
+fi
+
+### Execute in LiveCD
+if [ -e /usr/bin/startbiglive ]; then
+	# Copy the file to install biglinux to the desktop and configure permissions
+	homeBigDesk="/home/biglinux/Desktop"
+	cfile='calamares-biglinux.desktop'
+	if [ ! -d "$homeBigDesk" ]; then
+		mkdir -p "$homeBigDesk"
+	fi
+
+	cp -f /usr/share/applications/$cfile "$homeBigDesk/"
+	chmod +x "$homeBigDesk/$cfile"
+
+	# Generate the SHA256sum of the file on each boot
+	checksum=$(sha256sum $homeBigDesk/$cfile | awk '{print $1}')
+
+	# Set metadata using gio
+	gio set $homeBigDesk/$cfile metadata::xfce-exe-checksum "$checksum"
+	gio set $homeBigDesk/$cfile metadata::trusted true
+fi
