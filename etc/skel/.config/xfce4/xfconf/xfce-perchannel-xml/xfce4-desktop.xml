@@ -10,7 +10,7 @@
       <property name="show-trash" type="bool" value="true"/>
     </property>
     <property name="icon-size" type="uint" value="48"/>
-    <property name="tooltip-size" type="double" value="64.000000"/>
+    <property name="tooltip-size" type="double" value="80"/>
   </property>
   <property name="backdrop" type="empty">
     <property name="screen0" type="empty">
