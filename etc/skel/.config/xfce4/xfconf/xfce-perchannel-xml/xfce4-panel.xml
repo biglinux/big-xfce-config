@@ -8,8 +8,8 @@
     <property name="panel-1" type="empty">
       <property name="background-style" type="uint" value="0"/>
       <property name="enable-struts" type="bool" value="true"/>
-      <property name="enter-opacity" type="uint" value="80"/>
-      <property name="leave-opacity" type="uint" value="80"/>
+      <property name="enter-opacity" type="uint" value="85"/>
+      <property name="leave-opacity" type="uint" value="85"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
@@ -26,7 +26,7 @@
       </property>
       <property name="position" type="string" value="p=8;x=96;y=1055"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="42"/>
+      <property name="size" type="uint" value="40"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -46,9 +46,9 @@
       <property name="favorites-in-recent" type="bool" value="true"/>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-show-description" type="bool" value="false"/>
-      <property name="menu-height" type="int" value="572"/>
+      <property name="menu-height" type="int" value="575"/>
       <property name="menu-opacity" type="int" value="99"/>
-      <property name="menu-width" type="int" value="396"/>
+      <property name="menu-width" type="int" value="400"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="recent" type="array">
