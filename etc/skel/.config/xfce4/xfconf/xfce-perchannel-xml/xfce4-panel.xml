@@ -52,9 +52,9 @@
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce-ui-settings.desktop"/>
         <value type="string" value="xfce-mouse-settings.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
-        <value type="string" value="xfce-ui-settings.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="org.xfce.PanelProfiles.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
@@ -64,6 +64,7 @@
         <value type="string" value="org.xfce.mousepad.desktop"/>
       </property>
       <property name="view-mode" type="int" value="2"/>
+      <property name="position-categories-alternate" type="bool" value="true"/>
     </property>
     <property name="plugin-2" type="string" value="docklike"/>
     <property name="plugin-3" type="string" value="pulseaudio">
