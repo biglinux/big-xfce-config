@@ -46,9 +46,9 @@
       <property name="favorites-in-recent" type="bool" value="true"/>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-show-description" type="bool" value="false"/>
-      <property name="menu-height" type="int" value="575"/>
+      <property name="menu-height" type="int" value="500"/>
       <property name="menu-opacity" type="int" value="99"/>
-      <property name="menu-width" type="int" value="400"/>
+      <property name="menu-width" type="int" value="500"/>
       <property name="position-commands-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="recent" type="array">
@@ -65,6 +65,8 @@
       </property>
       <property name="view-mode" type="int" value="2"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
+      <property name="launcher-show-tooltip" type="bool" value="false"/>
+      <property name="category-icon-size" type="int" value="0"/>
     </property>
     <property name="plugin-2" type="string" value="docklike"/>
     <property name="plugin-3" type="string" value="pulseaudio">
