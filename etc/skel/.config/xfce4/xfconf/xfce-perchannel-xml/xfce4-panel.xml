@@ -8,8 +8,8 @@
     <property name="panel-1" type="empty">
       <property name="background-style" type="uint" value="0"/>
       <property name="enable-struts" type="bool" value="true"/>
-      <property name="enter-opacity" type="uint" value="85"/>
-      <property name="leave-opacity" type="uint" value="85"/>
+      <property name="enter-opacity" type="uint" value="95"/>
+      <property name="leave-opacity" type="uint" value="95"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
