@@ -37,7 +37,6 @@
       <property name="favorites" type="array">
         <value type="string" value="xfce4-file-manager.desktop"/>
         <value type="string" value="org.manjaro.pamac.manager.desktop"/>
-        <value type="string" value="xfce4-web-browser.desktop"/>
         <value type="string" value="xfce4-terminal-emulator.desktop"/>
         <value type="string" value="libreoffice-writer.desktop"/>
         <value type="string" value="xfce-ui-settings.desktop"/>
