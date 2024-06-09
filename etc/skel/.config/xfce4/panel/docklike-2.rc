@@ -1,6 +1,6 @@
 [user]
 showPreviews=true
-pinned=thunar;
+pinned=thunar;brave-browser;
 indicatorStyle=1
 inactiveIndicatorStyle=1
 forceIconSize=false
