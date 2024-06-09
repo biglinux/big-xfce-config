@@ -28,4 +28,27 @@
 	<text-files/>
 	<video-files/>
 </action>
+<action>
+	<icon>gtk-convert</icon>
+	<name>Convert audio &amp; video</name>
+	<submenu></submenu>
+	<unique-id>1717615776203492-1</unique-id>
+	<command>mystiq %f</command>
+	<description>Audio and video converter</description>
+	<range></range>
+	<patterns>*</patterns>
+	<audio-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>kdenlive-select-images</icon>
+	<name>Convert png to jpg &amp; jpg to png</name>
+	<submenu></submenu>
+	<unique-id>1717616241433404-2</unique-id>
+	<command>convert %f `basename %f .jpg`.png,convert %f `basename %f .png`.jpg</command>
+	<description>images conversor</description>
+	<range></range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>
