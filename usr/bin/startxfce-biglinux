@@ -34,6 +34,15 @@ if [ -e "$HOME/.config/ledkeyboard" ]; then
 	change-keyboard-led on
 fi
 
+# Path to the control file
+controlFile="$HOME/.config/Thunar/uca.xml"
+
+# Check if the control file exists
+if [ ! -f "$controlFile" ]; then
+    # Execute the command if the control file does not exist
+    /usr/local/bin/thunar-actions-translated.sh
+fi
+
 ### Execute in LiveCD
 if [ -e /usr/bin/startbiglive ]; then
 	# Copy the file to install biglinux to the desktop and configure permissions

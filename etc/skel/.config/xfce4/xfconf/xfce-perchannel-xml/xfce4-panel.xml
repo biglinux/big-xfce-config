@@ -4,12 +4,12 @@
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
     <value type="int" value="1"/>
-    <property name="dark-mode" type="bool" value="false"/>
+    <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
       <property name="background-style" type="uint" value="0"/>
       <property name="enable-struts" type="bool" value="true"/>
-      <property name="enter-opacity" type="uint" value="95"/>
-      <property name="leave-opacity" type="uint" value="95"/>
+      <property name="enter-opacity" type="uint" value="73"/>
+      <property name="leave-opacity" type="uint" value="90"/>
       <property name="length" type="uint" value="100"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="mode" type="uint" value="0"/>
@@ -18,11 +18,12 @@
         <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="7"/>
+        <value type="int" value="9"/>
         <value type="int" value="4"/>
         <value type="int" value="3"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
-        <value type="int" value="9"/>
+        <value type="int" value="8"/>
       </property>
       <property name="position" type="string" value="p=8;x=96;y=1055"/>
       <property name="position-locked" type="bool" value="true"/>
@@ -32,7 +33,7 @@
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="whiskermenu">
       <property name="button-icon" type="string" value="biglinux-blue"/>
-      <property name="button-single-row" type="bool" value="true"/>
+      <property name="button-single-row" type="bool" value="false"/>
       <property name="command-switchuser" type="string" value="dm-tool switch-to-greeter"/>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-file-manager.desktop"/>
@@ -45,27 +46,31 @@
       <property name="favorites-in-recent" type="bool" value="true"/>
       <property name="hover-switch-category" type="bool" value="true"/>
       <property name="launcher-show-description" type="bool" value="false"/>
-      <property name="menu-height" type="int" value="500"/>
+      <property name="menu-height" type="int" value="650"/>
       <property name="menu-opacity" type="int" value="99"/>
-      <property name="menu-width" type="int" value="500"/>
-      <property name="position-commands-alternate" type="bool" value="true"/>
-      <property name="position-search-alternate" type="bool" value="true"/>
+      <property name="menu-width" type="int" value="800"/>
+      <property name="position-commands-alternate" type="bool" value="false"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
       <property name="recent" type="array">
         <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="org.kde.konsole.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
+        <value type="string" value="libreoffice-writer.desktop"/>
+        <value type="string" value="xfce4-taskmanager.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="xfce-mouse-settings.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="org.xfce.PanelProfiles.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
-        <value type="string" value="xfce-workspaces-settings.desktop"/>
-        <value type="string" value="xfce-settings-manager.desktop"/>
-        <value type="string" value="xfce4-terminal-emulator.desktop"/>
-        <value type="string" value="org.xfce.mousepad.desktop"/>
       </property>
-      <property name="view-mode" type="int" value="2"/>
+      <property name="view-mode" type="int" value="0"/>
       <property name="position-categories-alternate" type="bool" value="true"/>
-      <property name="launcher-show-tooltip" type="bool" value="false"/>
+      <property name="launcher-show-tooltip" type="bool" value="true"/>
       <property name="category-icon-size" type="int" value="0"/>
+      <property name="launcher-icon-size" type="int" value="3"/>
+      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="profile-shape" type="int" value="0"/>
     </property>
     <property name="plugin-2" type="string" value="docklike"/>
     <property name="plugin-3" type="string" value="pulseaudio">
@@ -74,7 +79,7 @@
     </property>
     <property name="plugin-4" type="string" value="systray">
       <property name="hide-new-items" type="bool" value="false"/>
-      <property name="icon-size" type="int" value="16"/>
+      <property name="icon-size" type="int" value="22"/>
       <property name="known-items" type="array">
         <value type="string" value="MSM Notifier for Plasma5"/>
         <value type="string" value="TelegramDesktop"/>
@@ -95,11 +100,12 @@
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%I:%M %p"/>
-      <property name="digital-layout" type="uint" value="3"/>
-      <property name="digital-time-font" type="string" value="Roboto 10"/>
-      <property name="digital-time-format" type="string" value="%I:%M %p"/>
+      <property name="digital-layout" type="uint" value="1"/>
+      <property name="digital-time-font" type="string" value="Noto Sans Mono Bold 11"/>
+      <property name="digital-time-format" type="string" value="%R"/>
       <property name="mode" type="uint" value="2"/>
       <property name="show-seconds" type="bool" value="false"/>
+      <property name="digital-date-font" type="string" value="Noto Sans Mono Bold 9"/>
     </property>
     <property name="plugin-6" type="string" value="power-manager-plugin"/>
     <property name="plugin-7" type="string" value="separator">
@@ -107,5 +113,6 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-9" type="string" value="notification-plugin"/>
+    <property name="plugin-8" type="string" value="showdesktop"/>
   </property>
 </channel>
