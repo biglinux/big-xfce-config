@@ -101,11 +101,11 @@
     <property name="plugin-5" type="string" value="clock">
       <property name="digital-format" type="string" value="%I:%M %p"/>
       <property name="digital-layout" type="uint" value="1"/>
-      <property name="digital-time-font" type="string" value="Noto Sans Mono Bold 11"/>
+      <property name="digital-time-font" type="string" value="Noto Sans Nerd Font 11"/>
       <property name="digital-time-format" type="string" value="%R"/>
       <property name="mode" type="uint" value="2"/>
       <property name="show-seconds" type="bool" value="false"/>
-      <property name="digital-date-font" type="string" value="Noto Sans Mono Bold 9"/>
+      <property name="digital-date-font" type="string" value="Noto Sans Nerd Font Medium 9"/>
     </property>
     <property name="plugin-6" type="string" value="power-manager-plugin"/>
     <property name="plugin-7" type="string" value="separator">
