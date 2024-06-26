@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=conky -c $HOME/.conky/Nashira-Dark/Nashira-Dark.conf &> /dev/null &
+Exec=sh .conky/conky-startup.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
