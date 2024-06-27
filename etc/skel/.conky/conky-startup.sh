@@ -3,7 +3,7 @@
 if [ "$DESKTOP_SESSION" = "xfce" ]; then 
    sleep 2s
    killall conky
-   cd "$HOME/.conky/Nashira-Dark"
-   conky -c "$HOME/.conky/Nashira-Dark/Nashira-Dark.conf" &
+   cd "$HOME/.conky/Big-Minimal"
+   conky -c "$HOME/.conky/Big-Minimal/Big-Minimal.conf" &
    exit 0
 fi
