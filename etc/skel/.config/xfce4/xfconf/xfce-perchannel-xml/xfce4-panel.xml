@@ -35,6 +35,7 @@
       <property name="button-icon" type="string" value="biglinux-blue"/>
       <property name="button-single-row" type="bool" value="false"/>
       <property name="command-switchuser" type="string" value="dm-tool switch-to-greeter"/>
+      <property name="show-command-lockscreen" type="bool" value="true"/>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-file-manager.desktop"/>
         <value type="string" value="org.manjaro.pamac.manager.desktop"/>
